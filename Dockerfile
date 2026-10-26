@@ -1,6 +1,10 @@
 # Use an official Python runtime as a parent image
 FROM python:3.12-slim
 
+ARG VERSION=0.1.0
+LABEL org.opencontainers.image.source="https://github.com/666dsa666/NestVideoBackup" \
+      org.opencontainers.image.version="$VERSION"
+
 # Set the working directory in the container
 WORKDIR /app
 
